@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontSize: 25
+    fontSize: 25,
   },
 
   logo: {
@@ -47,7 +47,17 @@ const Header = () => {
           </Box>
           <Box marginRight="15px">
             <Button color="inherit">Sign in</Button>
-            <Button variant="outlined" color="default">
+            <Button
+              style={{
+                borderRadius: 5,
+                backgroundColor: "white",
+                padding: "5px 15px",
+                fontSize: "12px",
+                color: "blue",
+                fontWeight: 600,
+              }}
+              variant="contained"
+            >
               Register
             </Button>
           </Box>
