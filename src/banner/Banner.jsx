@@ -1,13 +1,21 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Banner1 from "../images/banner1.png";
 import Banner2 from "../images/banner2.png";
 import Banner3 from "../images/banner3.png";
 
 const Banner = () => {
   return (
-    <Carousel nextIcon nextLabel prevIcon prevLabel>
+    <Carousel
+      nextIcon={
+        <span aria-hidden="true" className="carousel-control-next-icon" />
+      }
+      nextLabel=""
+      prevIcon={
+        <span aria-hidden="true" className="carousel-control-prev-icon" />
+      }
+      prevLabel=""
+    >
       <Carousel.Item interval={1000}>
         <img className="d-block w-100" src={Banner1} alt="First slide" />
         {/* <Carousel.Caption>
