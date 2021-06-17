@@ -1,14 +1,16 @@
 import React from "react";
 import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
+  // AppBar,
+  // Toolbar,
+  // Typography,
+  // Button,
   makeStyles,
-  Box,
+  // Box,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import Logo from "../images/logo.png";
+// import { Link } from "react-router-dom";
+// import Logo from "../images/logo.png";
+import TopNavbar2 from "../navbar/TopNavbar2";
+// import Navbar2 from "../navbar/TopNav";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
     padding: 7,
     height: 80,
   },
+  link: {
+    color: "white",
+    textDecoration: "none",
+    "&:hover": {
+      color: "white",
+    },
+  },
 }));
 
 const Header = () => {
@@ -30,7 +39,9 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      {/* <Navbar2 /> */}
+      <TopNavbar2 />
+      {/* <AppBar position="static">
         <Toolbar>
           <Link to="/">
             <img src={Logo} alt="logo" className={classes.logo}></img>
@@ -40,7 +51,11 @@ const Header = () => {
           </Typography>
 
           <Box flexGrow={4}>
-            <Button color="inherit">About US</Button>
+            <Button color="inherit">
+              <Link to="/about" className={classes.link}>
+                About US
+              </Link>
+            </Button>
             <Button color="inherit">Product</Button>
             <Button color="inherit">Package</Button>
             <Button color="inherit">Contact US</Button>
@@ -63,7 +78,7 @@ const Header = () => {
             </Button>
           </Box>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
     </div>
   );
 };

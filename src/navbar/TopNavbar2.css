@@ -1,0 +1,41 @@
+.bg-color {
+  background-color: #dadada;
+}
+
+/* .nav {
+    height: 40px;
+  } */
+
+.nav-links {
+  font-size: 12px;
+}
+
+.nav-links {
+  display: inline-block;
+  margin-right: -8px;
+
+  /* font-size: 12px;
+  height: 30px;
+  margin-top: -4px; */
+}
+
+.nav-links-active {
+  display: inline-block;
+  font-size: 12px;
+  height: 30px;
+  margin-top: -4px;
+}
+
+.nav a {
+  /* padding-top: 2px; */
+  color: rgb(29, 28, 28);
+}
+
+.nav a :hover {
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.sub-menu {
+  padding-left: -40px;
+}
