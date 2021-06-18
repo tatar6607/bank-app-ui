@@ -6,31 +6,77 @@ import {} from "./TopNavbar2.css";
 
 const TopNavbar2 = () => {
   return (
-    <div>
+    <div className="nav-main-top">
+      <Container fluid className="nav-main-bottom">
+        <Container
+          style={{
+            borderTop: "3px solid #f15039",
+            // maxWidth: "70vw",
+            paddingTop: "2px",
+          }}
+        >
+          <Row>
+            <Col xs={4} md={12} className="d-none d-md-block">
+              <FirstMenu />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
       <Container>
-        <Row className="d-flex justify-content-md-center text-center text-md-start">
-          <Col md={4} className="pt-1">
+        <Row className="pt-4 pb-1 d-flex justify-content-md-center text-center text-md-start">
+          <Col md={4} className="">
             <img
               src={logo}
               alt="logo"
-              style={{ height: "25px", width: "155px" }}
+              style={{ height: "30px", width: "160px" }}
             />
           </Col>
-          <Col xs={12} md={8}>
-            <TopMenu />
+          <Col
+            xs={12}
+            md={8}
+            className="d-grid align-content-md-center align-content-lg-center"
+          >
+            <SecondMenu />
           </Col>
         </Row>
-        <Row>
-          <Col xs={4} md={12}>
-            <SubMenu />
-          </Col>
-        </Row>
+      </Container>
+      <Container fluid className="">
+        <Container className="">
+          <Row>
+            <Col>
+              <ThirdMenu />
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </div>
   );
 };
 
-const TopMenu = () => {
+const FirstMenu = () => {
+  return (
+    <div>
+      <Nav variant="tabs" defaultActiveKey="/" className="">
+        <Nav.Item>
+          <Nav.Link href="/" className="nav a">
+            Advantage
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Mobile Bank</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-3">Sign in</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-4">Register</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </div>
+  );
+};
+
+const SecondMenu = () => {
   return (
     <div>
       <Nav
@@ -38,34 +84,34 @@ const TopMenu = () => {
         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
         className="justify-content-center justify-content-md-end"
       >
-        <Nav.Item className="nav-links">
+        {/* <Nav.Item className="nav-links">
           <Nav.Link href="/home">
             <Icon name="conversation"> </Icon>
             About Us
           </Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
         <Nav.Item className="nav-links">
           <Nav.Link eventKey="link-1">
             <Icon name="university"> </Icon>
-            Product
+            Advantage
           </Nav.Link>
         </Nav.Item>
         <Nav.Item className="nav-links">
           <Nav.Link eventKey="link-1">
             <Icon name="suitcase"> </Icon>
-            Package
+            Mobile Bank
           </Nav.Link>
         </Nav.Item>
         <Nav.Item className="nav-links">
           <Nav.Link eventKey="link-1">
             <Icon name="map marker alternate"> </Icon>
-            Location
+            Sign in
           </Nav.Link>
         </Nav.Item>
         <Nav.Item className="nav-links">
           <Nav.Link eventKey="link-1">
             <Icon name="envelope"> </Icon>
-            Contact
+            Register
           </Nav.Link>
         </Nav.Item>
       </Nav>
@@ -73,24 +119,26 @@ const TopMenu = () => {
   );
 };
 
-const SubMenu = () => {
+const ThirdMenu = () => {
   return (
-    <div style={{ backgroundColor: "red", paddingLeft: "0px" }}>
+    <div>
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="light"
-        variant="light"
-        className="sub-menu"
+        // bg="light"
+        // variant="light"
+        style={{ marginBottom: "-5px" }}
       >
         <Container className="p-0">
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="text-center"
+            className="text-center bg-primary"
           />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav ">
             <Nav className="me-auto">
-              <Nav.Link href="/">About Us</Nav.Link>
+              <Nav.Link href="/" className="nav a">
+                About Us
+              </Nav.Link>
               <Nav.Link href="/">Product</Nav.Link>
               <Nav.Link href="/">Package</Nav.Link>
               <Nav.Link href="/">Location</Nav.Link>
