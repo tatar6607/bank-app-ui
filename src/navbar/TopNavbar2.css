@@ -1,5 +1,5 @@
 .main-top-container {
-  border-top: "3px solid #ff7800";
+  border-top: 3px solid #ea8039;
   padding-top: "2px";
 }
 
@@ -33,9 +33,9 @@
   margin-right: -8px;
 }
 
-.nav-links.active {
+/* .nav-links.active {
   color: red;
-}
+} */
 
 .nav-links :hover {
   color: black;
@@ -52,7 +52,7 @@
 }
 
 .nav.nav-tabs .nav-link:hover {
-  color: #ff7800;
+  color: #ea8039;
 }
 
 .second-navbar {
@@ -68,11 +68,11 @@
 }
 
 .second-navbar:hover {
-  color: #ff7800;
+  color: #ea8039;
 }
 
 .second-navbar i {
-  color: #ff7800;
+  color: #ea8039;
 }
 
 .third-navbar {
@@ -86,12 +86,12 @@
 
 .third-navbar.active {
   text-decoration: none;
-  border-bottom: 2px solid #ff7800;
+  border-bottom: 3px solid #ea8039;
 }
 
 .third-navbar:hover {
   text-decoration: none;
-  border-bottom: 2px solid #ff7800;
+  border-bottom: 3px solid #ea8039;
 }
 
 .navbar .navbar-collapse {
@@ -99,8 +99,9 @@
 }
 
 .navbar-toggler {
-  border: none;
-  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  width: 100vw;
   float: none;
   margin-right: 0;
 }

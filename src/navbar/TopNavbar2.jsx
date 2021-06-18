@@ -8,13 +8,7 @@ const TopNavbar2 = () => {
   return (
     <div className="nav-main-top">
       <Container fluid className="nav-main-bottom">
-        <Container
-          style={{
-            borderTop: "3px solid #ff7800",
-            // maxWidth: "70vw",
-            paddingTop: "2px",
-          }}
-        >
+        <Container className="main-top-container">
           <Row>
             <Col xs={4} md={12} className="d-none d-md-block">
               <FirstMenu />
@@ -40,7 +34,7 @@ const TopNavbar2 = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid style={{ marginTop: "-12px" }}>
+      <Container fluid style={{ marginTop: "-15px", marginBottom: "-5px" }}>
         <Container>
           <Row>
             <Col>
