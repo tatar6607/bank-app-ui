@@ -18,16 +18,33 @@ const Banner = () => {
     >
       <Carousel.Item interval={50000}>
         <img className="d-block w-100" src={Banner1} alt="First slide" />
-        {/* <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption> */}
+        <Carousel.Caption>
+          <button className="btn btn-danger"> Merhaba </button>
+          <h3 className="text-dark">First slide label</h3>
+          <p className="text-dark">
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </p>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={50000}>
         <img className="d-block w-100" src={Banner2} alt="Second slide" />
+        <Carousel.Caption>
+          <button className="btn btn-danger"> Hello </button>
+          <h3 className="text-dark">2 slide label</h3>
+          <p className="text-dark">
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </p>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={Banner3} alt="Third slide" />
+        <Carousel.Caption>
+          <button className="btn btn-danger"> Bonjour </button>
+          <h3 className="text-dark">2 slide label</h3>
+          <p className="text-dark">
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </p>
+        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
