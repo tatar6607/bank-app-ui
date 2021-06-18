@@ -10,7 +10,7 @@ const TopNavbar2 = () => {
       <Container fluid className="nav-main-bottom">
         <Container
           style={{
-            borderTop: "3px solid #f15039",
+            borderTop: "3px solid #ff7800",
             // maxWidth: "70vw",
             paddingTop: "2px",
           }}
@@ -120,29 +120,47 @@ const SecondMenu = () => {
 };
 
 const ThirdMenu = () => {
+  // let key = "";
   return (
-    <div>
+    <div style={{ boxSizing: "border-box" }}>
       <Navbar
         collapseOnSelect
         expand="lg"
         // bg="light"
         // variant="light"
-        style={{ marginBottom: "-5px" }}
+        style={{ marginBottom: "-12px" }}
       >
         <Container className="p-0">
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             className="text-center bg-primary"
           />
-          <Navbar.Collapse id="responsive-navbar-nav ">
-            <Nav className="me-auto">
-              <Nav.Link href="/" className="nav a">
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav
+              className="me-auto"
+              defaultActiveKey="/1"
+              // activeKey={key}
+              // onSelect={(selectedKey) => {
+              //   key = selectedKey;
+              //   console.log(key);
+              //   return key;
+              // }}
+            >
+              <Nav.Link href="/1" className="third-navbar">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/">Product</Nav.Link>
-              <Nav.Link href="/">Package</Nav.Link>
-              <Nav.Link href="/">Location</Nav.Link>
-              <Nav.Link href="/">Contact</Nav.Link>
+              <Nav.Link href="/" className="third-navbar">
+                Product
+              </Nav.Link>
+              <Nav.Link href="/" className="third-navbar">
+                Package
+              </Nav.Link>
+              <Nav.Link href="/" className="third-navbar">
+                Location
+              </Nav.Link>
+              <Nav.Link href="/" className="third-navbar">
+                Contact
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

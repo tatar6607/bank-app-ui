@@ -52,3 +52,30 @@
 .nav.nav-tabs .nav-link.active {
   background-color: #f7f7f7;
 }
+
+.third-navbar {
+  /* color: #037979; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* line-height: 1.6rem; */
+  text-decoration: none;
+  margin: 5px 5px 5px 5px;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+.third-navbar.active {
+  /* color: #037979; */
+  text-decoration: none;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  border-bottom: 2px solid #ff7800;
+  /* border-bottom: 2px solid #f15039; */
+}
+
+.third-navbar:hover {
+  text-decoration: none;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  border-bottom: 2px solid #f15039;
+  /* color: #c10944; */
+  /* background-color: #61dafb; */
+}
