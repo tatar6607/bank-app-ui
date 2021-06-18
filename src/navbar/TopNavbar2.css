@@ -5,43 +5,37 @@
   background-color: #ebebeb;
 }
 
-/* .nav {
-    height: 40px;
-  } */
-
-.nav-links {
-  font-size: 12px;
-}
-
-.nav-links {
-  display: inline-block;
-  margin-right: -8px;
-
-  /* font-size: 12px;
-  height: 30px;
-  margin-top: -4px; */
-}
-
-.nav-links-active {
-  display: inline-block;
-  font-size: 12px;
-  /* height: 30px; */
-  /* margin-top: -4px; */
-}
-
 .nav a {
   /* padding-top: 2px; */
   color: rgb(29, 28, 28);
 }
 
-.nav a :hover {
+.nav li a :hover {
   color: black;
   background-color: #ce2121;
 }
 
-/* .sub-menu {
-  padding-left: -40px;
-} */
+/* .nav {
+    height: 40px;
+  } */
+
+.nav-links {
+  font-size: 13px;
+}
+
+.nav-links {
+  display: inline-block;
+  margin-right: -8px;
+}
+
+.nav-links.active {
+  color: red;
+}
+
+.nav-links :hover {
+  color: black;
+}
+
 .nav.nav-tabs .nav-link {
   font-size: 12px;
   padding-top: 2px;
@@ -53,29 +47,56 @@
   background-color: #f7f7f7;
 }
 
-.third-navbar {
-  /* color: #037979; */
+.nav.nav-tabs .nav-link:hover {
+  color: #ff7800;
+}
+
+.second-navbar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* line-height: 1.6rem; */
+  color: black;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.second-navbar a {
+  color: rgb(51, 51, 51) !important;
+}
+
+.second-navbar:hover {
+  color: #ff7800;
+}
+
+.second-navbar i {
+  color: #ff7800;
+}
+
+.third-navbar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 5px 0px 5px;
   box-sizing: border-box;
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
 }
 
 .third-navbar.active {
-  /* color: #037979; */
   text-decoration: none;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   border-bottom: 2px solid #ff7800;
-  /* border-bottom: 2px solid #f15039; */
 }
 
 .third-navbar:hover {
   text-decoration: none;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  border-bottom: 2px solid #f15039;
-  /* color: #c10944; */
-  /* background-color: #61dafb; */
+  border-bottom: 2px solid #ff7800;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border: none;
+  width: 100%;
+  float: none;
+  margin-right: 0;
 }

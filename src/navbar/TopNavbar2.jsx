@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import { Icon } from "semantic-ui-react";
-import logo from "../images/logo1.png";
+import logo from "../images/logo21.png";
 import {} from "./TopNavbar2.css";
 
 const TopNavbar2 = () => {
@@ -23,12 +23,12 @@ const TopNavbar2 = () => {
         </Container>
       </Container>
       <Container>
-        <Row className="pt-4 pb-1 d-flex justify-content-md-center text-center text-md-start">
+        <Row className="pt-2 d-flex justify-content-md-center text-center text-md-start">
           <Col md={4} className="">
             <img
               src={logo}
               alt="logo"
-              style={{ height: "30px", width: "160px" }}
+              style={{ height: "90px", width: "210px" }}
             />
           </Col>
           <Col
@@ -77,39 +77,30 @@ const FirstMenu = () => {
 };
 
 const SecondMenu = () => {
+  const myClass = "second-navbar";
   return (
     <div>
-      <Nav
-        activeKey="/home"
-        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-        className="justify-content-center justify-content-md-end"
-      >
-        {/* <Nav.Item className="nav-links">
-          <Nav.Link href="/home">
-            <Icon name="conversation"> </Icon>
-            About Us
-          </Nav.Link>
-        </Nav.Item> */}
-        <Nav.Item className="nav-links">
-          <Nav.Link eventKey="link-1">
+      <Nav className="justify-content-center justify-content-md-end">
+        <Nav.Item>
+          <Nav.Link bsPrefix={myClass}>
             <Icon name="university"> </Icon>
             Advantage
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item className="nav-links">
-          <Nav.Link eventKey="link-1">
+        <Nav.Item>
+          <Nav.Link bsPrefix={myClass}>
             <Icon name="suitcase"> </Icon>
             Mobile Bank
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item className="nav-links">
-          <Nav.Link eventKey="link-1">
+        <Nav.Item>
+          <Nav.Link bsPrefix={myClass}>
             <Icon name="map marker alternate"> </Icon>
             Sign in
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item className="nav-links">
-          <Nav.Link eventKey="link-1">
+        <Nav.Item>
+          <Nav.Link bsPrefix={myClass}>
             <Icon name="envelope"> </Icon>
             Register
           </Nav.Link>
@@ -120,45 +111,33 @@ const SecondMenu = () => {
 };
 
 const ThirdMenu = () => {
-  // let key = "";
+  let [key, setKey] = useState("#/1");
   return (
-    <div style={{ boxSizing: "border-box" }}>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        // bg="light"
-        // variant="light"
-        style={{ marginBottom: "-12px" }}
-      >
+    <div>
+      <Navbar expand="md">
         <Container className="p-0">
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            className="text-center bg-primary"
-          />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav
               className="me-auto"
-              defaultActiveKey="/1"
-              // activeKey={key}
-              // onSelect={(selectedKey) => {
-              //   key = selectedKey;
-              //   console.log(key);
-              //   return key;
-              // }}
+              activeKey={key}
+              onSelect={(k) => {
+                setKey(k);
+              }}
             >
-              <Nav.Link href="/1" className="third-navbar">
+              <Nav.Link href="#/1" className="third-navbar">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/" className="third-navbar">
+              <Nav.Link href="#/2" className="third-navbar">
                 Product
               </Nav.Link>
-              <Nav.Link href="/" className="third-navbar">
+              <Nav.Link href="#/3" eventKey="/3" className="third-navbar">
                 Package
               </Nav.Link>
-              <Nav.Link href="/" className="third-navbar">
+              <Nav.Link href="#/4" eventKey="/4" className="third-navbar">
                 Location
               </Nav.Link>
-              <Nav.Link href="/" className="third-navbar">
+              <Nav.Link href="#/contact" eventKey="/5" className="third-navbar">
                 Contact
               </Nav.Link>
             </Nav>
