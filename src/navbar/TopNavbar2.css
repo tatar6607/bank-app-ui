@@ -1,3 +1,8 @@
+.main-top-container {
+  border-top: "3px solid #ff7800";
+  padding-top: "2px";
+}
+
 .nav-main-top {
   background-color: #f7f7f7;
 }
@@ -38,7 +43,6 @@
 
 .nav.nav-tabs .nav-link {
   font-size: 12px;
-  padding-top: 2px;
   padding-top: 2px;
   border-bottom: none;
 }

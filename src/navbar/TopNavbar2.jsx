@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import { Icon } from "semantic-ui-react";
-import logo from "../images/logo21.png";
+import logo from "../images/logo4.png";
 import {} from "./TopNavbar2.css";
 
 const TopNavbar2 = () => {
@@ -23,12 +23,12 @@ const TopNavbar2 = () => {
         </Container>
       </Container>
       <Container>
-        <Row className="pt-2 d-flex justify-content-md-center text-center text-md-start">
-          <Col md={4} className="">
+        <Row className="pt-1 d-flex justify-content-md-center text-center text-md-start">
+          <Col md={4}>
             <img
               src={logo}
               alt="logo"
-              style={{ height: "90px", width: "210px" }}
+              style={{ height: "90px", width: "200px" }}
             />
           </Col>
           <Col
@@ -40,8 +40,8 @@ const TopNavbar2 = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="">
-        <Container className="">
+      <Container fluid style={{ marginTop: "-12px" }}>
+        <Container>
           <Row>
             <Col>
               <ThirdMenu />
