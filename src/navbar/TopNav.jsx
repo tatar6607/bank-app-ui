@@ -5,7 +5,7 @@ import "./TopNav.css";
 
 const TopNav = () => {
   return (
-    <div className="bg-color">
+    <div className="">
       <Container
         style={{
           borderTop: "2px solid #f15039",
