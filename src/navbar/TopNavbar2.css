@@ -42,8 +42,8 @@
 }
 
 .nav.nav-tabs .nav-link {
-  font-size: 12px;
-  padding-top: 2px;
+  font-size: 13px;
+  padding-top: 6px;
   border-bottom: none;
 }
 
@@ -58,9 +58,9 @@
 .second-navbar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
   box-sizing: border-box;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .second-navbar a {

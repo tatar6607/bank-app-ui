@@ -28,7 +28,7 @@ const TopNavbar2 = () => {
           <Col
             xs={12}
             md={8}
-            className="d-grid align-content-md-center align-content-lg-center"
+            className="d-grid mt-3 align-content-md-center align-content-lg-center"
           >
             <SecondMenu />
           </Col>
@@ -74,8 +74,8 @@ const SecondMenu = () => {
   const myClass = "second-navbar";
   return (
     <div>
-      <Nav className="justify-content-center justify-content-md-end">
-        <Nav.Item>
+      <Nav className="d-flex ps-5 ps-md-0 justify-content-center justify-content-md-end">
+        {/* <Nav.Item>
           <Nav.Link bsPrefix={myClass}>
             <Icon name="university"> </Icon>
             Advantage
@@ -86,16 +86,26 @@ const SecondMenu = () => {
             <Icon name="suitcase"> </Icon>
             Mobile Bank
           </Nav.Link>
-        </Nav.Item>
+        </Nav.Item> */}
         <Nav.Item>
           <Nav.Link bsPrefix={myClass}>
-            <Icon name="map marker alternate"> </Icon>
+            <Icon
+              name="user"
+              circular
+              size="large"
+              className="d-block mb-1"
+            ></Icon>
             Sign in
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link bsPrefix={myClass}>
-            <Icon name="envelope"> </Icon>
+            <Icon
+              name="unlock alternate"
+              circular
+              size="large"
+              className="d-block mb-1"
+            ></Icon>
             Register
           </Nav.Link>
         </Nav.Item>
